@@ -5574,6 +5574,16 @@
   );
 });
 
+// Horizontal Scroll
+
+var item = document.getElementById("container");
+
+  window.addEventListener("wheel", function (e) {
+    if (e.deltaY > 0) item.scrollLeft += 100;
+    else item.scrollLeft -= 100;
+  });
+
+
 // Intro Screen
 
 let intro = document.querySelector('.intro');
@@ -5709,7 +5719,8 @@ mode.addEventListener('click', () => {
     document.documentElement.style.setProperty('--lineClr', '#e2dcc8');
     document.documentElement.style.setProperty('--accClr', '#b66449');
     document.documentElement.style.setProperty('--btnText', '#e2dcc8');
-    document.documentElement.style.setProperty('--bckClr', 'rgba(33,33,33, .9)');
+    document.documentElement.style.setProperty('--bckClr', 'rgba(33,33,33, 0)');
+    document.documentElement.style.setProperty('--gradient', 'linear-gradient(to right, #241f1f 0%, #241f1f 32%, #4a4746 100%)');
   } else {
     document.documentElement.style.setProperty('--mainClr', '#e2dcc8');
     document.documentElement.style.setProperty('--fontClr', '#404040');
@@ -5718,7 +5729,9 @@ mode.addEventListener('click', () => {
     document.documentElement.style.setProperty('--btnText', '#e2dcc8');
     document.documentElement.style.setProperty(
       '--bckClr',
-      'rgba(255,251,239,.6)'
+      'rgba(255,251,239,.5)'
     );
+    document.documentElement.style.setProperty('--gradient', 'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)');
+    
   }
 });

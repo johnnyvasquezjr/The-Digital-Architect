@@ -4,7 +4,8 @@
   --lineClr: #7a7878;
   --accClr: #b66449;
   --btnText: #e2dcc8;
-  --bckClr: rgba(255, 251, 239, 0.6);
+  --bckClr: rgba(255, 251, 239, .5);
+  --gradient: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 * {
@@ -13,6 +14,10 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+body {
+  background: var(--gradient);
 }
 
 a {
@@ -271,7 +276,7 @@ main {
 
 /* container side scroll */
 
-.container {
+#container {
   position: absolute;
   display: flex;
   width: 100vw;
