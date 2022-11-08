@@ -1,3 +1,6 @@
+
+
+
 // Library
 
 !(function (e, t) {
@@ -5709,7 +5712,7 @@ mode.addEventListener('click', () => {
   if (darkMode) {
     document.documentElement.style.setProperty('--mainClr', '#404040');
     document.documentElement.style.setProperty('--fontClr', '#e2dcc8');
-    document.documentElement.style.setProperty('--lineClr', '#e2dcc8');
+    document.documentElement.style.setProperty('--lineClr', '#7a7878');
     document.documentElement.style.setProperty('--accClr', '#b66449');
     document.documentElement.style.setProperty('--btnText', '#e2dcc8');
     document.documentElement.style.setProperty('--bckClr', 'rgba(33,33,33, 0)');
@@ -5732,4 +5735,68 @@ mode.addEventListener('click', () => {
       'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)'
     );
   }
+});
+
+
+// let canvas = document.getElementById('canvas');
+// let ctx = canvas.getContext('2d');
+
+// let width = canvas.width = window.innerWidth;
+// let height = canvas.height = window.innerHeight;
+
+// let x = width / 2;
+// let ballX = x;
+
+// let y = height / 2;
+// let ballY = y;
+
+// function lerp (start, end, t) {
+//     return start * (1 - t) + end * t;
+// }
+
+// window.addEventListener('mousemove', (e)=>{
+//     x = e.clientX;
+//     y = e.clientY;
+// })
+
+// function moveBall() {
+//     ctx.clearRect(0, 0, width, height)
+//     ctx.fillStyle = '#b66449';
+//     ballX = lerp(ballX, x, 0.1)
+//     ballY = lerp(ballY, y, 0.1)
+//     ctx.beginPath();
+//     ctx.arc(ballX, ballY, 50, 0, 2 * Math.PI);
+//     ctx.fill();
+
+//     requestAnimationFrame(moveBall)
+// }
+
+// moveBall()
+
+
+let innerCursor = document.querySelector(".inner-cursor");
+let outerCursor = document.querySelector(".outer-cursor");
+
+document.addEventListener("mousemove", moveCursor);
+
+function moveCursor(e) {
+  let x = e.clientX;
+  let y = e.clientY;
+
+  innerCursor.style.left = `${x}px`;
+  innerCursor.style.top = `${y}px`;
+  outerCursor.style.left = `${x}px`;
+  outerCursor.style.top = `${y}px`;
+}
+
+let links = Array.from(document.querySelectorAll("a"));
+console.log(links);
+
+links.forEach(link => {
+    link.addEventListener("mouseover", () => {
+        innerCursor.classList.add("grow");
+    });
+    link.addEventListener("mouseleave", () => {
+        innerCursor.classList.remove("grow");
+    });
 });
