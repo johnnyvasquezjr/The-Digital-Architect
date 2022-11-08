@@ -5576,13 +5576,12 @@
 
 // Horizontal Scroll
 
-var item = document.getElementById("container");
+var item = document.getElementById('container');
 
-  window.addEventListener("wheel", function (e) {
-    if (e.deltaY > 0) item.scrollLeft += 100;
-    else item.scrollLeft -= 100;
-  });
-
+window.addEventListener('wheel', function (e) {
+  if (e.deltaY > 0) item.scrollLeft += 100;
+  else item.scrollLeft -= 100;
+});
 
 // Intro Screen
 
@@ -5590,34 +5589,28 @@ let intro = document.querySelector('.intro');
 let logo = document.querySelector('.logo-header');
 let logoSpan = document.querySelectorAll('.logo');
 
-window.addEventListener('DOMContentLoaded', ()=>{
-     
-    setTimeout(()=>{
+window.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    logoSpan.forEach((span, idx) => {
+      setTimeout(() => {
+        span.classList.add('active');
+      }, (idx + 1) * 400);
+    });
 
-        logoSpan.forEach((span, idx)=>{
-            setTimeout(()=>{
-                span.classList.add('active');
-            }, (idx + 1) *400)
-        })
+    setTimeout(() => {
+      logoSpan.forEach((span, idx) => {
+        setTimeout(() => {
+          span.classList.remove('active');
+          span.classList.add('fade');
+        }, (idx + 1) * 50);
+      });
+    }, 2000);
 
-        setTimeout(()=>{
-            logoSpan.forEach((span, idx)=>{
-
-                setTimeout(()=>{
-                    span.classList.remove('active');
-                    span.classList.add('fade');
-                }, (idx + 1) * 50)
-            })
-        },2000)
-
-        setTimeout(()=>{
-            intro.style.top = '-100vh';
-        }, 2300)
-
-    })
-})
-
-
+    setTimeout(() => {
+      intro.style.top = '-100vh';
+    }, 2300);
+  });
+});
 
 // Noise Animation
 
@@ -5720,7 +5713,10 @@ mode.addEventListener('click', () => {
     document.documentElement.style.setProperty('--accClr', '#b66449');
     document.documentElement.style.setProperty('--btnText', '#e2dcc8');
     document.documentElement.style.setProperty('--bckClr', 'rgba(33,33,33, 0)');
-    document.documentElement.style.setProperty('--gradient', 'linear-gradient(to right, #241f1f 0%, #241f1f 32%, #4a4746 100%)');
+    document.documentElement.style.setProperty(
+      '--gradient',
+      'linear-gradient(to right, #241f1f 0%, #241f1f 32%, #4a4746 100%)'
+    );
   } else {
     document.documentElement.style.setProperty('--mainClr', '#e2dcc8');
     document.documentElement.style.setProperty('--fontClr', '#404040');
@@ -5731,7 +5727,9 @@ mode.addEventListener('click', () => {
       '--bckClr',
       'rgba(255,251,239,.5)'
     );
-    document.documentElement.style.setProperty('--gradient', 'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)');
-    
+    document.documentElement.style.setProperty(
+      '--gradient',
+      'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)'
+    );
   }
 });
