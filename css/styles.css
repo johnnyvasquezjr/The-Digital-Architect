@@ -148,6 +148,10 @@ main {
   text-decoration: underline;
 }
 
+.active {
+  color: var(--accClr);
+}
+
 /* Splash Screen */
 
 .intro {
@@ -191,7 +195,7 @@ main {
 
 .header {
   display: flex;
-  border-bottom: .5px solid var(--lineClr);
+  border-bottom: 0.5px solid var(--lineClr);
   width: 100%;
   height: 4.7vw;
   left: 0;
@@ -202,7 +206,7 @@ main {
 
 .header-left {
   display: flex;
-  border-right: .5px solid var(--lineClr);
+  border-right: 0.5px solid var(--lineClr);
   width: 37vw;
   flex-shrink: 0;
 }
@@ -221,7 +225,7 @@ main {
   justify-content: center;
   flex-shrink: 0;
   width: 4.5vw;
-  border-right: .5px solid var(--lineClr);
+  border-right: 0.5px solid var(--lineClr);
 }
 
 .header-logo img {
@@ -275,8 +279,9 @@ main {
   transition: 0.3s ease;
 }
 
-.header-menu li a:active {
-  color: var(--accClr);
+
+.header-menu li a:focus {
+  font-weight: 700;
 }
 
 .mode-toggle {
@@ -292,7 +297,6 @@ main {
 
 .mode-toggle a:hover {
   color: var(--accClr);
-  cursor: pointer;
 }
 
 /* Cursor */
@@ -300,8 +304,8 @@ main {
 .inner-cursor {
   position: fixed;
   left: 10px;
-  width: .5vw;
-  height: .5vw;
+  width: 0.5vw;
+  height: 0.5vw;
   transform: translate(-50%, -50%);
   background-color: var(--fontClr);
   /* mix-blend-mode: difference; */
@@ -316,20 +320,6 @@ main {
   transition: width 0.5s, height 0.5s;
 }
 
-/* .outer-cursor {
-  position: fixed;
-  left: 10px;
-  width: 50px;
-  height: 50px;
-  transform: translate(-50%, -50%);
-  mix-blend-mode: difference;
-  border-radius: 50%;
-  pointer-events: none;
-  transition: 0.5s;
-} */
-
-/* Container with Side Scroll */
-
 #container {
   position: absolute;
   display: flex;
@@ -341,7 +331,7 @@ main {
   overflow-x: scroll;
 }
 
-section{
+section {
   width: 100%;
   height: 100%;
   flex: none;
@@ -349,11 +339,16 @@ section{
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  75% {opacity: 0;}
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 
 .sticky-title.show {
   transform: translateX(0);
@@ -400,7 +395,7 @@ section{
   height: 100%;
   left: 0;
   bottom: 0;
-  border-right: .5px solid var(--lineClr);
+  border-right: 0.5px solid var(--lineClr);
   transform: translateX(0) !important;
   letter-spacing: 0.02em;
   z-index: 5;
@@ -417,9 +412,6 @@ section{
 .sticky-title .light span {
   font-weight: 500;
 }
-
-
-
 
 /* Home Section */
 
@@ -438,7 +430,7 @@ section{
 
 #home .content-left {
   width: 32.73vw;
-  border-right: .5px solid var(--lineClr);
+  border-right: 0.5px solid var(--lineClr);
   flex-shrink: 0;
   box-sizing: border-box;
   padding: 1.14583vw 2.08333vw 1.14583vw 1.14583vw;
@@ -453,7 +445,7 @@ section{
   bottom: 0;
   height: 100%;
   width: 4.5vw;
-  border-right: .5px solid var(--lineClr);
+  border-right: 0.5px solid var(--lineClr);
 }
 
 #home .sticky-title p {
@@ -486,7 +478,6 @@ section{
   height: 100%;
   overflow: hidden;
 }
-
 
 #home .content-btn-block {
   display: flex;
@@ -535,7 +526,7 @@ section{
 
 #projects .content-left {
   width: 32.73vw;
-  border-right: .5px solid var(--lineClr);
+  border-right: 0.5px solid var(--lineClr);
   flex-shrink: 0;
   box-sizing: border-box;
   padding: 1.14583vw 2.08333vw 1.14583vw 1.38vw;
@@ -595,7 +586,7 @@ section{
   opacity: 1;
 }
 
-#projects .content-menu{
+#projects .content-menu {
   opacity: 1;
   color: var(--fontClr);
 }
@@ -650,7 +641,6 @@ section{
   display: block;
 }
 
-
 /* Services Section */
 
 #services .content {
@@ -664,7 +654,7 @@ section{
 
 #services .content-left {
   width: 32.73vw;
-  border-right: .5px solid var(--lineClr);
+  border-right: 0.5px solid var(--lineClr);
   flex-shrink: 0;
   box-sizing: border-box;
   padding: 1.14583vw 2.08333vw 1.14583vw 1.14583vw;
@@ -724,8 +714,6 @@ section{
   margin-right: 3.02083vw;
 }
 
-
-
 #services .content-services-title p {
   font-size: 1.14583vw;
   line-height: 130%;
@@ -752,8 +740,6 @@ section{
   margin-bottom: 100px;
 }
 
-
-
 /* Contact Section */
 
 #contact .content {
@@ -767,7 +753,7 @@ section{
 
 #contact .content-left {
   width: 32.73vw;
-  border-right: .5px solid var(--lineClr);
+  border-right: 0.5px solid var(--lineClr);
   flex-shrink: 0;
   box-sizing: border-box;
   padding: 1.14583vw 2.08333vw 1.14583vw 1.14583vw;
@@ -931,6 +917,7 @@ section{
   display: block;
   width: 57.8125vw;
   margin: 0 auto;
+  z-index: 5;
 }
 
 /* @media screen and (max-width: 768px) and (orientation: portrait) {

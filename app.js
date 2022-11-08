@@ -5800,3 +5800,17 @@ links.forEach(link => {
         innerCursor.classList.remove("grow");
     });
 });
+
+
+
+let li = document.querySelectorAll('.links');
+let sec = document.querySelectorAll('section');
+
+function activeMenu() {
+  let len=sec.length;
+  while(--len && window.scrollX + 97 < sec[len].offsetTop){}
+  li.forEach(ltx => ltx.classList.remove('active'));
+  li[len].classList.add('active');
+}
+activeMenu();
+window.addEventListener('scroll', activeMenu);
