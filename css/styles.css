@@ -296,6 +296,41 @@ main {
   color: var(--accClr);
 }
 
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .header {
+    height: 18.66667vw;
+    background: var(--mblClr);
+    z-index: 40;
+  }
+
+  .header-left {
+    width: 40%;
+    border: 0;
+  }
+
+  .header-right {
+    width: 60%;
+    justify-content: center;
+  }
+
+  .header-logo {
+    width: 90%;
+    padding: 0 4vw;
+  }
+
+  .header-socials {
+    display: none;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .mode-toggle a {
+    font-size: 1rem;
+  }
+}
+
 /* Cursor */
 .inner-cursor {
   position: fixed;
@@ -313,6 +348,13 @@ main {
   width: 2.5vw;
   height: 2.5vw;
   transition: width 0.5s, height 0.5s;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .inner-cursor,
+  .inner-cursor.grow {
+    display: none;
+  }
 }
 
 /* Pages */
@@ -408,6 +450,42 @@ section {
   font-weight: 500;
 }
 
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .sticky-title {
+    transform: none !important;
+    width: 100%;
+    background: var(--mblClr);
+    height: 13.33333vw;
+    top: 13.5vw;
+    z-index: 30;
+    position: sticky;
+    margin-left: 0;
+  }
+
+  .sticky-title ul {
+    width: 100%;
+    font-size: 5.33333vw;
+    position: static;
+    height: 100%;
+    transform: none;
+  }
+
+  .sticky-title ul li {
+    padding: 0 5.33333vw;
+  }
+
+  .sticky-title {
+    border-left: 0;
+    border-bottom: 0.5px solid var(--lineClr);
+    border-right: 0;
+    background: var(--mblClr);
+  }
+
+  .sticky-title ul {
+    transform: none !important;
+  }
+}
+
 /* Home Section */
 #home {
   animation: fadeIn 6s;
@@ -497,6 +575,70 @@ section {
 .home-circles-lines div:first-child,
 .home-circles-lines div:last-child {
   opacity: 0;
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  #home .content {
+    padding: 0;
+    height: auto;
+    width: 100vw;
+    display: block;
+  }
+
+  #home .content-left {
+    width: 100%;
+    border-right: 0;
+    border-bottom: 0.5px solid var(--lineClr);
+    padding: 5.33333vw;
+    margin-top: 15vw;
+    padding-bottom: 15vw;
+  }
+
+  #home .content-right {
+    width: 100%;
+    padding: 5.33333vw;
+  }
+
+  #home .content-title .h1 {
+    font-size: 12vw;
+  }
+
+  #home .content-description {
+    max-width: 70%;
+    margin-top: 8vw;
+  }
+
+  #home .content-description .small {
+    font-size: 4vw;
+  }
+
+  #home .content-description + .content-btn-block {
+    margin-top: 10.66667vw;
+  }
+
+  #home .content-btn-block {
+    padding-right: 10vw;
+  }
+
+  #home .content-btn-label {
+    margin-right: 5.2vw;
+    font-weight: 400;
+  }
+
+  #home .hire-me i {
+    font-size: 8vw;
+  }
+
+  #home .home-circles {
+    display: flex;
+    justify-content: center;
+    margin-top: 15vw;
+  }
+
+  #home .home-circles i {
+    font-size: 10vw;
+    color: var(--fontClr);
+  }
 }
 
 /* Projects Section */
@@ -856,294 +998,4 @@ section {
 
 #contact .content-form-btn {
   margin-top: 4.0625vw;
-}
-
-/* Thank You Form */
-#noise-menu {
-  display: none;
-}
-
-.thank-you .header {
-  transition: transform 0.5s linear;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.thank-you .header:before {
-  content: '';
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: linear-gradient(to right, #241f1f 0, #241f1f 32%, #4a4746 100%);
-  transition: opacity 0.5s linear;
-  opacity: 0;
-}
-
-.thank-you .header.active {
-  position: fixed;
-}
-
-.thank-you .header.active:before {
-  opacity: 1;
-}
-
-.thank-you-container {
-  box-sizing: border-box;
-  display: block;
-  width: 57.8125vw;
-  margin: 0 auto;
-  z-index: 5;
-}
-
-.thank-you-big-banner {
-  position: relative;
-  width: 100%;
-  height: 44.27083vw;
-  background: center top/contain url(../images/blog-big_banner-bg.png) no-repeat;
-  background-attachment: fixed;
-}
-
-.thank-you-big-banner .thank-you-container {
-  height: 100%;
-  display: flex;
-  padding-bottom: 5.26042vw;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.thank-you-big-banner .thank-you-container .small {
-  margin-top: auto;
-  margin-bottom: 1.77083vw;
-}
-
-.thank-you-big-banner .thank-you-container .h1:last-child {
-  margin-top: 0.52083vw;
-}
-
-.thank-you-content {
-  padding: 13.22917vw 0 5.72917vw;
-  box-sizing: border-box;
-}
-
-.thank-you-text {
-  margin: 0 auto;
-  width: 38.02083vw;
-}
-
-.thank-you-text .small {
-  line-height: 1.35417vw;
-}
-
-.thank-you-text .small + .small {
-  margin-top: 1.5625vw;
-}
-
-.thank-you-h1 {
-  display: block;
-  margin-bottom: 3.33333vw;
-  font-weight: 500;
-  font-size: 2.34375vw;
-  line-height: 2.86458vw;
-  text-transform: uppercase;
-  color: var(--mainClr);
-}
-
-.thank-you-menu {
-  list-style: none;
-  display: flex;
-  align-items: center;
-}
-
-.thank-you-menu li {
-  display: block;
-  padding: 0 1.66667vw;
-  text-transform: uppercase;
-}
-
-.thank-you-menu li a {
-  font-size: 0.72917vw;
-  line-height: 140%;
-  display: block;
-}
-
-.thank-you-menu li.active a {
-  color: var(--accClr);
-}
-
-.thank-you-message {
-  position: relative;
-  width: 38.02083vw;
-  padding: 2.13542vw 3.75vw 1.77083vw 6.66667vw;
-  margin: 0 auto;
-  border: 1px solid var(--lineClr);
-  box-sizing: border-box;
-}
-
-.thank-you-message:before {
-  content: '';
-  position: absolute;
-  left: 2.39583vw;
-  top: 1.97917vw;
-  display: block;
-  width: 1.97917vw;
-  height: 2.39583vw;
-  background: url(../images/q.png) no-repeat;
-  background-size: contain;
-  pointer-events: none;
-  background-position: center bottom;
-}
-
-.thank-you-message-text {
-  display: block;
-  margin-bottom: 1.45833vw;
-  font-weight: 300;
-  font-size: 1.04167vw;
-  line-height: 1.82292vw;
-  color: var(--fontClr);
-}
-
-.thank-you-message-name {
-  font-weight: 600;
-  margin-bottom: 0.52083vw;
-  color: var(--fontClr);
-}
-
-.thank-you-message-title {
-  opacity: 0.8;
-  font-style: italic;
-  color: var(--accClr);
-}
-
-.thank-you-title {
-  text-align: center;
-  font-size: 5rem;
-  font-weight: 500;
-  color: var(--accClr);
-  margin-bottom: 50px;
-}
-
-.tybtnwrap {
-  display: flex;
-  width: 7rem;
-  height: 3rem;
-  margin: 30px auto;
-}
-
-.thank-you-button {
-  display: inline-block;
-  border: none;
-  background-color: var(--accClr);
-  font-weight: 500;
-  font-size: 1rem;
-  padding: 10px 30px;
-  border-radius: 20px;
-  text-decoration: none;
-  color: var(--btnText);
-  width: 7rem;
-  height: 3rem;
-}
-
-.thank-you-button:hover {
-  cursor: pointer;
-  background-color: var(--fontClr);
-  color: var(--accClr);
-}
-
-/* Thank You Mobile */
-@media screen and (max-width: 768px;) and (orientation: portrait) {
-  .thank-you-header {
-    height: 18.66667vw;
-    background: var(--mblClr);
-    z-index: 40;
-  }
-
-  .thank-you .header {
-    background: transparent;
-  }
-
-  .thank-you-container {
-    width: calc(100% - 30px);
-  }
-
-  .thank-you-big-banner {
-    height: 100vw;
-    background: center top/cover url(../images/blog-big_banner-bg.png) no-repeat;
-  }
-
-  .thank-you-big_banner .thank-you-container {
-    padding-bottom: 13.6vw;
-  }
-
-  .thank-you-big_banner .thank-you-container .small {
-    margin-bottom: 6.4vw;
-  }
-
-  .thank-you-big_banner .thank-you-container .h1:last-child {
-    margin-top: 2.66667vw;
-  }
-
-  .thank-you-content {
-    padding: 13.33333vw 0 13.33333vw;
-  }
-
-  .thank-you-text .small {
-    line-height: 6.93333vw;
-  }
-
-  .thank-you-text .small + .small {
-    margin-top: 5.33333vw;
-  }
-
-  .thank-you-h1 {
-    margin-bottom: 9.06667vw;
-    font-size: 6.66667vw;
-    line-height: 14.66667vw;
-  }
-
-  .thank-you-menu {
-    display: none;
-  }
-
-  .thank-you-message {
-    width: 100%;
-    padding: 5.6vw 8.53333vw 5.6vw 18.66667vw;
-  }
-
-  .thank-you-message:before {
-    top: 3.2vw;
-    left: 4vw;
-    width: 10.13333vw;
-    height: 12.26667vw;
-  }
-
-  .thank-you-message-text {
-    margin-bottom: 4vw;
-    font-size: 4.26667vw;
-    line-height: 5.86667vw;
-  }
-
-  .thank-you-message-name {
-    margin-bottom: 2.66667vw;
-  }
-
-  .thank-you-button {
-    border: none;
-    background-color: #b66449;
-    padding: 10px 30px;
-    border-radius: 20px;
-    margin: 50px auto 0 auto;
-    text-decoration: none;
-    color: #e2dcc8;
-  }
-
-
-
-
-
-
 }
