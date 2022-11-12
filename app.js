@@ -5720,6 +5720,8 @@ mode.addEventListener('click', () => {
       '--gradient',
       'linear-gradient(to right, #241f1f 0%, #241f1f 32%, #4a4746 100%)'
     );
+    document.documentElement.style.setProperty('--mblClr', 'linear-gradient(to right, #241f1f 0%, #241f1f 32%, #4a4746 100%)')
+    
   } else {
     document.documentElement.style.setProperty('--mainClr', '#e2dcc8');
     document.documentElement.style.setProperty('--fontClr', '#404040');
@@ -5734,44 +5736,13 @@ mode.addEventListener('click', () => {
       '--gradient',
       'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)'
     );
+    document.documentElement.style.setProperty('--mblClr', 'rgb(246, 243, 237)')
   }
 });
 
 
-// let canvas = document.getElementById('canvas');
-// let ctx = canvas.getContext('2d');
 
-// let width = canvas.width = window.innerWidth;
-// let height = canvas.height = window.innerHeight;
-
-// let x = width / 2;
-// let ballX = x;
-
-// let y = height / 2;
-// let ballY = y;
-
-// function lerp (start, end, t) {
-//     return start * (1 - t) + end * t;
-// }
-
-// window.addEventListener('mousemove', (e)=>{
-//     x = e.clientX;
-//     y = e.clientY;
-// })
-
-// function moveBall() {
-//     ctx.clearRect(0, 0, width, height)
-//     ctx.fillStyle = '#b66449';
-//     ballX = lerp(ballX, x, 0.1)
-//     ballY = lerp(ballY, y, 0.1)
-//     ctx.beginPath();
-//     ctx.arc(ballX, ballY, 50, 0, 2 * Math.PI);
-//     ctx.fill();
-
-//     requestAnimationFrame(moveBall)
-// }
-
-// moveBall()
+// Custom Cursor
 
 
 let innerCursor = document.querySelector(".inner-cursor");

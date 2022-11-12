@@ -12,6 +12,7 @@
       rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>The Digital Architect</title>
+    <link rel="icon" type="image/x-icon" href="images/DA favicon.png">
     <script
       src="https://kit.fontawesome.com/1a1fddc759.js"
       crossorigin="anonymous"></script>
@@ -30,8 +31,6 @@
     </div>
 
     <main>
-
-  
       <!-- Background Noise -->
       <canvas class="noise" id="noise"></canvas>
       <!-- <canvas id="canvas"></canvas> -->
@@ -74,54 +73,53 @@
 
       <!-- Main Content -->
 
-      <!-- Home -->
-      <div id="container">
-        <section id="home">
-          <div class="content">
-            <div class="content-left">
-              <div class="sticky-title-scroll">
-              <div class="sticky-title">
-                <ul>
-                  <li>
-                    <div class="light">The <span>Digital</span> Architect</div>
-                    <div>1.0</div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-              <div class="content-title">
-                <div class="h1">MAKE YOUR</div>
-                <div class="h1">WEBSITE</div>
-                <div class="h1 span">GREAT</div>
-              </div>
-              <div class="content-description">
-                <div class="small">Hi, my name is Johnny</div>
-                <div class="small">
-                  and I build <span class="span">visuals for the web.</span>
+      <div class="scroll">
+        <div class="home-page">
+          <!-- Home -->
+          <div id="container">
+            <section id="home">
+              <div class="content">
+                <div class="sticky-title">
+                  <ul>
+                    <li>
+                      <div class="light">
+                        The <span>Digital</span> Architect
+                      </div>
+                      <div>1.0</div>
+                    </li>
+                  </ul>
                 </div>
-                <div class="content-btn-block">
-                  <div class="content-btn-label small">Hire Me</div>
-                  <a class="hire-me" href="#contact">
-                    <i class="fa-solid fa-message"></i>
-                  </a>
+                <div class="content-left">
+                  <div class="content-title">
+                    <div class="h1">MAKE YOUR</div>
+                    <div class="h1">WEBSITE</div>
+                    <div class="h1 span">GREAT</div>
+                  </div>
+                  <div class="content-description">
+                    <div class="small">Hi, my name is Johnny</div>
+                    <div class="small">
+                      and I build <span class="span">visuals for the web.</span>
+                    </div>
+                    <div class="content-btn-block">
+                      <div class="content-btn-label small">Hire Me</div>
+                      <a class="hire-me" href="#contact">
+                        <i class="fa-solid fa-message"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="content-right">
+                  <div class="home-circles">
+                    <div class="home-circles-lines"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="content-right">
-              <div class="home-circles">
-                <div class="home-circles-lines"></div>
-              </div>
-            </div>
-          </div>
-        </section>
+            </section>
 
-        <!-- Portfolio -->
+            <!-- Portfolio -->
 
-        <section id="projects">
-          
-          <div class="content">
-            <div class="content-left">
-              <div class="sticky-title-scroll">
+            <section id="projects">
+              <div class="content">
                 <div class="sticky-title">
                   <ul>
                     <li>
@@ -130,73 +128,75 @@
                     </li>
                   </ul>
                 </div>
+                <div class="content-left">
+                  <div class="content-title">
+                    <div class="h1">SOME <span class="span">VISUALS</span></div>
+                    <div class="h1">I'VE BUILT</div>
+                  </div>
+                  <ul class="content-menu projects-menu">
+                    <li>
+                      <a href="#ak">Athletic Kats | NFT</a>
+                    </li>
+                    <li>
+                      <a href="#jv">Johnny Vasquez Jr | Photo</a>
+                    </li>
+                    <li>
+                      <a href="#">Coming Soon</a>
+                    </li>
+                    <li>
+                      <a href="#">Coming Soon</a>
+                    </li>
+                    <li>
+                      <a href="#">Coming Soon</a>
+                    </li>
+                    <li><a href="#">Coming Soon</a></li>
+                  </ul>
+                </div>
+                <div class="content-right">
+                  <div class="projects-blocks">
+                    <div class="projects-block active">
+                      <a href="#" target="_blank" rel="nofollow"
+                        ><img id="ak" src="images/ak.png" width="100%" alt=""
+                      /></a>
+                    </div>
+                    <div class="projects-block active">
+                      <a
+                        id="#"
+                        href="https://johnnyvasquezjr.co/"
+                        target="_blank"
+                        rel="nofollow"
+                        ><img id="jv" src="images/jv.png" alt=""
+                      /></a>
+                    </div>
+                    <div class="projects-block active">
+                      <a href="#" target="_blank" rel="nofollow"
+                        ><img src="img/project-3.jpg" alt=""
+                      /></a>
+                    </div>
+                    <div class="projects-block active">
+                      <a href="#" target="_blank" rel="nofollow"
+                        ><img src="img/project-4.jpg" alt=""
+                      /></a>
+                    </div>
+                    <div class="projects-block active">
+                      <a href="#" target="_blank" rel="nofollow"
+                        ><img src="img/project-5.jpg" alt=""
+                      /></a>
+                    </div>
+                    <div class="projects-block active">
+                      <a href="#" target="_blank" rel="nofollow"
+                        ><img src="img/project-6.jpg" alt=""
+                      /></a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="content-title">
-                <div class="h1">SOME <span class="span">VISUALS</span></div>
-                <div class="h1">I'VE BUILT</div>
-              </div>
-              <ul class="content-menu projects-menu">
-                <li>
-                  <a href="#ak">Athletic Kats | NFT</a>
-                </li>
-                <li>
-                  <a href="#jv">Johnny Vasquez Jr | Photo</a>
-                </li>
-                <li>
-                  <a href="#">Coming Soon</a>
-                </li>
-                <li>
-                  <a href="#">Coming Soon</a>
-                </li>
-                <li>
-                  <a href="#">Coming Soon</a>
-                </li>
-                <li><a href="#">Coming Soon</a></li>
-              </ul>
-            </div>
-            <div class="content-right">
-              <div class="projects-blocks">
-                <div class="projects-block active">
-                  <a href="#" target="_blank" rel="nofollow"
-                    ><img id="ak" src="images/ak.png" width="100%" alt=""
-                  /></a>
-                </div>
-                <div class="projects-block active">
-                  <a id="#" href="https://johnnyvasquezjr.co/" target="_blank" rel="nofollow"
-                    ><img id="jv" src="images/jv.png" alt=""
-                  /></a>
-                </div>
-                <div class="projects-block active">
-                  <a href="#" target="_blank" rel="nofollow"
-                    ><img src="img/project-3.jpg" alt=""
-                  /></a>
-                </div>
-                <div class="projects-block active">
-                  <a href="#" target="_blank" rel="nofollow"
-                    ><img src="img/project-4.jpg" alt=""
-                  /></a>
-                </div>
-                <div class="projects-block active">
-                  <a href="#" target="_blank" rel="nofollow"
-                    ><img src="img/project-5.jpg" alt=""
-                  /></a>
-                </div>
-                <div class="projects-block active">
-                  <a href="#" target="_blank" rel="nofollow"
-                    ><img src="img/project-6.jpg" alt=""
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+            </section>
 
-        <!-- Services -->
+            <!-- Services -->
 
-        <section id="services">
-          <div class="content">
-            <div class="content-left">
-              <div class="sticky-title-scroll">
+            <section id="services">
+              <div class="content">
                 <div class="sticky-title">
                   <ul>
                     <li>
@@ -205,76 +205,75 @@
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div class="content-title">
-                <div class="h1">COMPLEXITY</div>
-                <div class="h1 span">MEETS</div>
-                <div class="h1">MINIMALISM</div>
-              </div>
-            </div>
-            <div class="content-right">
-              <div class="content-subtitle">
-                Services <span class="span">Offered</span>
-              </div>
-              <div class="content-services services-list">
-                <div class="content-services">
-                  <div class="content-services-img">
-                    <img src="images/multi-web.png" alt="" />
-                  </div>
-                  <div class="content-services-title">
-                    <p>Front end Web Development</p>
-                  </div>
-                  <div class="content-services-text small">
-                    Design and create aesthetically pleasing and user-friendly
-                    website that increases traffic and business.
+                <div class="content-left">
+                  <div class="content-title">
+                    <div class="h1">COMPLEXITY</div>
+                    <div class="h1 span">MEETS</div>
+                    <div class="h1">MINIMALISM</div>
                   </div>
                 </div>
-                <div class="content-services">
-                  <div class="content-services-img">
-                    <img src="images/uxui.png" alt="" />
+                <div class="content-right">
+                  <div class="content-subtitle">
+                    Services <span class="span">Offered</span>
                   </div>
-                  <div class="content-services-title">
-                    <p>UI/UX Design</p>
-                  </div>
-                  <div class="content-services-text small">
-                    Focusing on designing experiences that are usable,
-                    beautiful, and delightful to users.
-                  </div>
-                </div>
-                <div class="content-services">
-                  <div class="content-services-img">
-                    <img src="images/logodesign.png" alt="" />
-                  </div>
-                  <div class="content-services-title">
-                    <p>Logo Design</p>
-                  </div>
-                  <div class="content-services-text small">
-                    Conceptualize and develop a design that fits your brand.
-                  </div>
-                </div>
-                <div class="content-services">
-                  <div class="content-services-img">
-                    <img src="images/content.png" alt="" />
-                  </div>
-                  <div class="content-services-title">
-                    <p>Content Creation</p>
-                  </div>
-                  <div class="content-services-text small">
-                    Create visual content for your website or marketing
-                    purposes.
+                  <div class="content-services services-list">
+                    <div class="content-services">
+                      <div class="content-services-img">
+                        <img src="images/multi-web.png" alt="" />
+                      </div>
+                      <div class="content-services-title">
+                        <p>Front end Web Development</p>
+                      </div>
+                      <div class="content-services-text small">
+                        Design and create aesthetically pleasing and
+                        user-friendly website that increases traffic and
+                        business.
+                      </div>
+                    </div>
+                    <div class="content-services">
+                      <div class="content-services-img">
+                        <img src="images/uxui.png" alt="" />
+                      </div>
+                      <div class="content-services-title">
+                        <p>UI/UX Design</p>
+                      </div>
+                      <div class="content-services-text small">
+                        Focusing on designing experiences that are usable,
+                        beautiful, and delightful to users.
+                      </div>
+                    </div>
+                    <div class="content-services">
+                      <div class="content-services-img">
+                        <img src="images/logodesign.png" alt="" />
+                      </div>
+                      <div class="content-services-title">
+                        <p>Logo Design</p>
+                      </div>
+                      <div class="content-services-text small">
+                        Conceptualize and develop a design that fits your brand.
+                      </div>
+                    </div>
+                    <div class="content-services">
+                      <div class="content-services-img">
+                        <img src="images/content.png" alt="" />
+                      </div>
+                      <div class="content-services-title">
+                        <p>Content Creation</p>
+                      </div>
+                      <div class="content-services-text small">
+                        Create visual content for your website or marketing
+                        purposes.
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
+            </section>
 
-        <!-- Contact -->
+            <!-- Contact -->
 
-        <section id="contact">
-          <div class="content">
-            <div class="content-left">
-              <div class="sticky-title-scroll">
+            <section id="contact">
+              <div class="content">
                 <div class="sticky-title">
                   <ul>
                     <li>
@@ -283,68 +282,81 @@
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div class="content__title">
-                <div class="h1">LET'S WORK</div>
-                <div class="h1 span">TOGETHER</div>
-              </div>
-              <div class="contact-copyright small">
-                © The Digital Architect 2022. All Rights Resevered
-              </div>
-            </div>
-            <div class="content-right">
-              <div class="content-subtitle">
-                Let's <span class="span">grab a coffee</span> or jump on a video
-                chat.
-              </div>
-              <form
-                class="content-contact contact-form"
-                action="https://formsubmit.co/ee1f73926b621822d4dc0fa47648a061"
-                method="POST">
-                <div class="content-brief">
-                  <div class="content-brief-title"></div>
-                  <div class="content-brief-text small">
-                    Explain <span class="span">your project</span> in detail and
-                    what goals you would like to acheive with your business.
+                <div class="content-left">
+                  <div class="content__title">
+                    <div class="h1">LET'S WORK</div>
+                    <div class="h1 span">TOGETHER</div>
+                  </div>
+                  <div class="contact-copyright small">
+                    © The Digital Architect 2022. All Rights Resevered
                   </div>
                 </div>
-                <div class="content-form">
-                  <label class="content-form-input">
-                    <input type="hidden" name="_captcha" value="false" />
-                    <input type="hidden" name="_next" value="https://johnnyvasquezjr.github.io/tda-portfolio/thankyou.html" />
-                    <input type="text" id="name" name="name" required="" /><span
-                      class="content-form-placeholder span"
-                      >Name *</span
-                    >
-                  </label>
-                  <label class="content-form-input">
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required="" /><span class="content-form-placeholder span"
-                      >Email *</span
-                    >
-                  </label>
-                  <label class="content-form-input">
-                    <input
-                      type="text"
-                      id="message"
-                      name="message"
-                      required=""
-                      minlength="10" /><span
-                      class="content-form-placeholder span"
-                      >Message *</span
-                    >
-                  </label>
-                  <div class="content-form-btn">
-                    <button class="btn btn--arrow" type="submit">SUBMIT</button>
+                <div class="content-right">
+                  <div class="content-subtitle">
+                    Let's <span class="span">grab a coffee</span> or jump on a
+                    video chat.
                   </div>
+                  <form
+                    class="content-contact contact-form"
+                    action="https://formsubmit.co/ee1f73926b621822d4dc0fa47648a061"
+                    method="POST">
+                    <div class="content-brief">
+                      <div class="content-brief-title"></div>
+                      <div class="content-brief-text small">
+                        Explain <span class="span">your project</span> in detail
+                        and what goals you would like to acheive with your
+                        business.
+                      </div>
+                    </div>
+                    <div class="content-form">
+                      <label class="content-form-input">
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input
+                          type="hidden"
+                          name="_next"
+                          value="https://johnnyvasquezjr.github.io/tda-portfolio/thankyou.html" />
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          required="" /><span
+                          class="content-form-placeholder span"
+                          >Name *</span
+                        >
+                      </label>
+                      <label class="content-form-input">
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          required="" /><span
+                          class="content-form-placeholder span"
+                          >Email *</span
+                        >
+                      </label>
+                      <label class="content-form-input">
+                        <input
+                          type="text"
+                          id="message"
+                          name="message"
+                          required=""
+                          minlength="10" /><span
+                          class="content-form-placeholder span"
+                          >Message *</span
+                        >
+                      </label>
+                      <div class="content-form-btn">
+                        <button class="btn btn--arrow" type="submit">
+                          SUBMIT
+                        </button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-              </form>
-            </div>
+              </div>
+            </section>
           </div>
-        </section>
+        </div>
       </div>
     </main>
 
