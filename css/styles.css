@@ -554,8 +554,8 @@ section {
   font-size: 1.14583vw;
   line-height: 160%;
   text-transform: uppercase;
-  border-top: 1px solid var(--lineClr);
-  border-bottom: 1px solid var(--lineClr);
+  border-top: 0.5px solid var(--lineClr);
+  border-bottom: 0.5px solid var(--lineClr);
   display: flex;
   position: relative;
   opacity: 0.5;
@@ -689,7 +689,7 @@ section {
 }
 
 #services .content-services + .content-services {
-  border-top: 1px solid var(--lineClr);
+  border-top: 0.5px solid var(--lineClr);
 }
 
 #services .content-services-img {
@@ -874,6 +874,10 @@ section {
 #contact .content-form-btn {
   margin-top: 4.0625vw;
 }
+
+
+
+/* Mobile media Queries */
 
 @media screen and (max-width: 768px) and (orientation: portrait) {
   body::-webkit-scrollbar {
