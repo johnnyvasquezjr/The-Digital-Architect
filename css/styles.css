@@ -9,6 +9,23 @@
   --mblClr: rgb(246, 243, 237);
 }
 
+::-webkit-scrollbar {
+  height: .5em;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--accClr);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--fontClr);
+  border-radius: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Universal Selectors */
 * {
   font-family: 'Poppins', sans-serif;
@@ -39,15 +56,6 @@ a:hover {
 :before {
   box-sizing: border-box;
   margin: 0;
-}
-
-body::-webkit-scrollbar {
-  width: 5px;
-  background: var(--fontClr);
-}
-
-body::-webkit-scrollbar-thumb {
-  background: var(--accClr);
 }
 
 main {
@@ -1247,6 +1255,7 @@ section {
   #contact .content-form-placeholder {
     font-size: 4.8vw;
     line-height: 13.33333vw;
+    line-height: 2.60417vw;
   }
 
   #contact .content-form-input {

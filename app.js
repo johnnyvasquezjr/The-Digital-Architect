@@ -5579,12 +5579,12 @@
 
 // Horizontal Scroll
 
-var item = document.getElementById('container');
+// var item = document.getElementById('#container');
 
-window.addEventListener('wheel', function (e) {
-  if (e.deltaY > 0) item.scrollLeft += 100;
-  else item.scrollLeft -= 100;
-});
+// window.addEventListener('wheel', function (e) {
+//   if (e.deltaY > 0) item.scrollLeft += 100;
+//   else item.scrollLeft -= 100;
+// });
 
 // Intro Screen
 
@@ -5785,3 +5785,30 @@ function activeMenu() {
 }
 activeMenu();
 window.addEventListener('scroll', activeMenu);
+
+
+
+
+
+
+// Horizontal Scroll
+
+
+
+(function () {
+  function scrollHorizontally(e) {
+      e = window.event || e;
+      var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+      document.body.scrollLeft -= (delta * 40); // Multiplied by 40
+      e.preventDefault();
+  }
+  if (window.addEventListener) {
+      // IE9, Chrome, Safari, Opera
+      window.addEventListener("mousewheel", scrollHorizontally, false);
+      // Firefox
+      window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
+  } else {
+      // IE 6/7/8
+      window.attachEvent("onmousewheel", scrollHorizontally);
+  }
+})();
