@@ -32,7 +32,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
   cursor: none;
 }
 
@@ -619,7 +618,6 @@ section {
   background: url(../img/arrow-link.svg) center center no-repeat;
   background-size: contain;
   pointer-events: none;
-  user-select: none;
 }
 
 .projects-blocks {
@@ -832,7 +830,6 @@ section {
   opacity: 0.8;
   text-transform: uppercase;
   pointer-events: none;
-  user-select: none;
   display: block;
   transition: 0.2s;
   position: absolute;
@@ -1122,7 +1119,6 @@ section {
     background: url(../img/arrow-link.svg) center center no-repeat;
     background-size: contain;
     pointer-events: none;
-    user-select: none;
   }
 
   #projects .content-menu li > a:not(.noicon)::after {
