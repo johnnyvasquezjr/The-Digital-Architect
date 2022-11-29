@@ -33,6 +33,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   cursor: none;
+  scroll-behavior: smooth;
 }
 
 body {
