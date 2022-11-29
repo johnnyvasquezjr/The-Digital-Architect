@@ -715,7 +715,8 @@ section {
 }
 
 .projects-block img {
-  padding-bottom: 10vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
   width: 100%;
   display: block;
   transition: transform 1s;
