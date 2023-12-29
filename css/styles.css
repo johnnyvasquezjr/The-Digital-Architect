@@ -1,6 +1,6 @@
 :root {
   --mainClr: #e2dcc8;
-  --fontClr: #404040;
+  --fontClr: #3a3a3a;
   --lineClr: #7a7878;
   --accClr: #b66449;
   --btnText: #e2dcc8;
@@ -237,7 +237,7 @@ main {
 }
 
 .header-logo img {
-  width: 80%;
+  width: 50%;
 }
 
 .header-socials {
@@ -297,7 +297,7 @@ main {
 }
 
 .mode-toggle a {
-  font-size: 1.2vh;
+  font-size: 2rem;
   text-decoration: none;
   color: var(--fontClr);
   display: block;
@@ -1060,7 +1060,7 @@ section {
   }
 
   .mode-toggle a {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   #container .sticky-title {
@@ -1533,3 +1533,4 @@ section {
     color: var(--fontClr);
   }
 }
+
