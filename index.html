@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="format-detection" content="telephone=no" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="css/styles.css" />
     <title>The Digital Architect</title>
-    <link rel="icon" type="image/x-icon" href="images/logo.svg" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    
     <script
       src="https://kit.fontawesome.com/1a1fddc759.js"
       crossorigin="anonymous"></script>
@@ -21,31 +23,15 @@
   </head>
 
 
+
+
   <body>
-    <!-- Splash Screen -->
-    <div class="intro">
-      <h1 class="logo-header">
-        <span class="logo">
-          <img width="100vh" src="images/d.png" alt="D" />
-        </span>
-        <span class="logo">
-          <img width="100vh" src="images/a.png" alt="A" />
-        </span>
-      </h1>
-    </div>
-
     
-    <main>
-      <!-- Background Noise -->
+    <main class="main main--home" style="opacity:0">
       <canvas class="noise" id="noise"></canvas>
-      <!-- <canvas id="canvas"></canvas> -->
-
-      <!-- Header Navigation -->
       <div class="header">
-        <div class="header-left">
-          <div class="header-logo">
-            <img src="images/logo.png" alt="logo" />
-          </div>
+        <div class="header__left">
+          <div class="header__letter"><img src="img/dalogo.svg" alt=""></div>
           <div class="header-socials">
             <a
               href="https://www.instagram.com/johnnyvasquezjr/"
@@ -65,388 +51,522 @@
               ><ion-icon name="logo-linkedin"></ion-icon></a>
           </div>
         </div>
-        <div class="header-right">
-          <ul class="header-menu">
-            <li class="links"><a href="#home">Home</a></li>
-            <li class="links"><a href="#projects">Projects</a></li>
-            <li class="links"><a href="#services">Services</a></li>
-            <li class="links"><a href="#contact">Contact</a></li>
+        <div class="header__right">
+          <ul class="header__menu">
+            <li class="active"><a class="js-scroll-link" href="javascript:;" data-link="0">Home</a></li>
+            <li><a class="js-scroll-link" href="javascript:;" data-link="1">Projects</a></li>
+            <li><a class="js-scroll-link" href="javascript:;" data-link="2">Services</a></li>
+            <li><a class="js-scroll-link" href="javascript:;" data-link="3">Testimonials</a></li>
+            <li><a class="js-scroll-link" href="javascript:;" data-link="4">The Experience</a></li>
+            <li><a class="js-scroll-link" href="javascript:;" data-link="5">Blog</a></li>
+            <li><a class="js-scroll-link" href="javascript:;" data-link="6">Contact</a></li>
           </ul>
-          <div class="mode-toggle">
-            <a class="mode"><ion-icon name="radio-button-on"></ion-icon></a>
-          </div>
+          <div class="header__phone"><a href="tel:+17602201357">+1 (760) 220 1357</a></div>
         </div>
       </div>
-
-      <canvas class="noise noise-inner" id="noise-menu"></canvas>
-
-      <!-- Main Content -->
-
       <div class="scroll">
         <div class="home-page">
-          <!-- Home -->
-          <div id="container">
-            <section id="home">
-              <div class="content">
-                <div class="sticky-title">
-                  <ul>
-                    <li>
-                      <div class="light">
-                        The <span>Digital</span> Architect
-                      </div>
-                      <div>1.0</div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="content-left">
-                  <div class="content-title">
-                    <div class="h1">MAKE YOUR</div>
-                    <div class="h1">WEBSITE</div>
-                    <div class="h1 span">GREAT</div>
-                  </div>
-                  <div class="content-description">
-                    <div class="small">Hi, my name is Johnny</div>
-                    <div class="small">
-                      and I build <span class="span">visuals for the web.</span>
-                    </div>
-                    <div class="content-btn-block">
-                      <div class="content-btn-label small">Hire Me</div>
-                      <a class="hire-me" href="#contact">
-                        <i class="fa-solid fa-message"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="content-right">
-                  <div class="container">
-                    <div class="chevron"></div>
-                    <div class="chevron"></div>
-                    <div class="chevron"></div>
-                  </div>
-                  <div class="circle__container">
-                    <div class="vertical__line"></div>
-                    <div class="horizontal__line"></div>
-                    <div class="circle__container__inner">
-                        <div class="circle middle__circle"></div>
-                        <div class="circle circle__one"></div>
-                        <div class="circle circle__two"></div>
-                        <div class="circle circle__three"></div>
-                        <div class="circle circle__four"></div>
-                    </div>
-                </div>
-                </div>
+          <div class="page-title show">
+            <ul>
+              <li>
+                <div class="title light">The <span>Digital</span> Architect</div>
+                <div class="number">1.0</div>
+              </li>
+              <li>
+                <div class="title light">Projects</div>
+                <div class="number">2.0</div>
+              </li>
+              <li>
+                <div class="title light">Services</div>
+                <div class="number">3.0</div>
+              </li>
+              <li>
+                <div class="title light">Testimonials</div>
+                <div class="number">4.0</div>
+              </li>
+              <li>
+                <div class="title light">Experience</div>
+                <div class="number">5.0</div>
+              </li>
+              <li>
+                <div class="title light">Blog</div>
+                <div class="number">6.0</div>
+              </li>
+              <li>
+                <div class="title light">Contact</div>
+                <div class="number">7.0</div>
+              </li>
+            </ul>
+            <canvas class="noise noise--inner" id="noise_menu"></canvas>
+
+
+
+          </div>
+
+
+
+          <!-- 01-Home -->
+
+           
+          <div class="scrollable">
+            <section class="home">
+              <div class="sticky-title">
+                <ul>
+                  <li>
+                    <div class="light">The <span>Digital</span> Architect</div>
+                    <div>1.0</div>
+                  </li>
+                </ul>
               </div>
-            </section>
-
-            <!-- Portfolio -->
-
-            <section id="projects">
               <div class="content">
-                <div class="sticky-title">
-                  <ul>
-                    <li>
-                      <div class="light">Projects</div>
-                      <div>2.0</div>
-                    </li>
-                  </ul>
-                </div>
-                <div class="content-left">
-                  <div class="content-title">
-                    <div class="h1">SOME <span class="span">VISUALS</span></div>
-                    <div class="h1">I'VE BUILT</div>
+                <div class="content__left">
+                  <div class="content__title">
+                    <div class="h1">DESIGN</div>
+                    <div class="h1">WITH</div>
+                    <div class="h1 span">PURPOSE</div>
                   </div>
-
-                  <!-- Desktop Menu -->
-                  <ul class="content-menu projects-menu">
-                    <li>
-                      <a href="#ak">Athletic Kats <span>|</span> NFT</a>
-                    </li>
-                    <li>
-                      <a href="#jv">Johnny Vasquez Jr <span>|</span> Photo</a>
-                    </li>
-                    <li>
-                      <a href="#mtb">Modern Times <span>|</span> Brewery </a>
-                    </li>
-                    <li>
-                      <a href="#">Coming Soon <span>|</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Coming Soon <span>|</span></a>
-                    </li>
-                    <!-- <li>
-                      <a href="#fbb">Firebase <span>|</span> Brewery</a>
-                    </li> -->
-                  </ul>
-
-                  <!-- Mobile Menu -->
-                  <ul class="content-mobile">
-                    <li>
-                      <a href="#">Athletic Kats <span>|</span> NFT</a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://johnnyvasquezjr.co"
-                        target="_blank"
-                        rel="noopener nofollow"
-                        >Johnny Vasquez Jr <span>|</span> Portfolio</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="http://www.moderntimesbeer.com/"
-                        target="_blank"
-                        rel="noopener nofollow"
-                        >Modern Times <span>|</span> Brewery
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">Coming Soon <span>|</span></a>
-                    </li>
-                    <li>
-                      <a href="#">Coming Soon <span>|</span></a>
-                    </li>
-                    <!-- <li>
-                      <a href="#">Firebase <span>|</span> Brewery</a>
-                    </li> -->
-                  </ul>
-                </div>
-
-                <div class="content-right">
-                  <div class="projects-blocks">
-                    <div class="projects-block active">
-                      <!-- <a href="" target="_blank" rel="noopener nofollow"> -->
-                        <img
-                          id="ak"
-                          src="images/akmockup.jpg"
-                          width="100%"
-                          alt="athletic kats"
-                      />
-                    <!-- </a> -->
-                    </div>
-                    <div class="projects-block active">
-                      <a
-                        href="https://johnnyvasquezjr.co/"
-                        target="_blank"
-                        rel="noopener nofollow"
-                        ><img id="jv" src="images/Portfolio.jpg" alt="portfolio"
-                      /></a>
-                    </div>
-                    <div class="projects-block active">
-                      <a
-                        href="http://www.moderntimesbeer.com"
-                        target="_blank"
-                        rel="noopener nofollow"
-                        ><img
-                          id="mtb"
-                          src="images/mtb.jpg"
-                          alt="modern times"
-                      /></a>
-                    </div>
-                    <!-- <div class="projects-block active">
-                      <a href="#" target="_blank" rel="noopener nofollow"
-                        ><img src="img/project-4.jpg" alt=""
-                      /></a>
-                    </div>
-                    <div class="projects-block active">
-                      <a href="#" target="_blank" rel="noopener nofollow"
-                        ><img src="img/project-6.jpg" alt=""
-                      /></a>
-                    </div>
-                    <div class="projects-block active">
-                      <a href="https://www.behance.net/johnnyvasquezjr" target="_blank" rel="noopener nofollow"
-                        ><img id="fbb" src="images/firebase.jpg" alt=""
-                      /></a>
+                  <div class="content__description">
+                    <div class="small">Our designs are timeless, user-focused, and tailored to your brand</div>
+                  </div>
+                  <div class="content__btn-block">
+                    <div class="content__btn-label small">CONNECT WITH ME</div><a class="content__btn-btn btn btn--arrow js-scroll-link" href="#hireme" data-link="6">
+                      <svg>
+                        <use xlink:href="./svg/sprite.svg#arrow"></use>
+                      </svg></a>
+                  </div>
+                  <div class="home__numbers">
+                    <!-- <div class="home__number">
+                      <div class="home__number-digital" data-number="8">8</div>
+                      <div class="home__number-text small">Years <br>experience</div>
+                    </div> -->
+                    <!-- <div class="home__number">
+                      <div class="home__number-digital" data-number="5">5</div>
+                      <div class="home__number-text small">Themeforest <br>awwards</div>
+                    </div> -->
+                    <!-- <div class="home__number">
+                      <div class="home__number-digital" data-number="60">60</div>
+                      <div class="home__number-text small">Projects <br>Done</div>
                     </div> -->
                   </div>
                 </div>
+                <div class="content__right">
+                  <div class="home__circles">
+                    <div class="home__circles-lines"></div>
+                    
+                  </div>
+                </div>
               </div>
             </section>
+          </div>
 
-            <!-- Services -->
 
-            <section id="services">
+          <!-- 02-Projects -->
+
+
+          <div class="scrollable">
+            <section class="projects">
+              <div class="sticky-title">
+                <ul>
+                  <li>
+                    <div class="light">Projects</div>
+                    <div>2.0</div>
+                  </li>
+                </ul>
+              </div>
               <div class="content">
-                <div class="sticky-title">
-                  <ul>
-                    <li>
-                      <div class="light">Services</div>
-                      <div>3.0</div>
-                    </li>
+                <div class="content__left">
+                  <div class="content__title">
+                    <div class="h1">Some Visuals</div>
+                  </div>
+                  <ul class="content__menu projects__menu">
+                    <li class="active"><a href="javascript:;">Aero Bikes</a></li>
+                    <li><a href="javascript:;">Modern Times Beer</a></li>
+                    <li><a href="javascript:;">Athletic Kats</a></li>
+                    <li><a href="javascript:;">The Visual Architect</a></li>
+                    <li><a href="javascript:;">Johnny Vasquez Jr</a></li>
+                    <!-- <li><a href="javascript:;">jonny - personal website</a></li> -->
                   </ul>
+                  <!-- <div class="content__btn-block">
+                    <div class="content__btn-label small">View all works</div><a class="content__btn-btn btn btn--arrow" href="https://www.behance.net/" target="_blank" rel="nofollow">
+                      <svg>
+                        <use xlink:href="./svg/sprite.svg#arrow"></use>
+                      </svg></a>
+                  </div> -->
                 </div>
-                <div class="content-left">
-                  <div class="content-title">
-                    <div class="h1">COMPLEXITY</div>
-                    <div class="h1 span">MEETS</div>
-                    <div class="h1">MINIMALISM</div>
+                <div class="content__right">
+                  <div class="projects__blocks">
+                    <div class="projects__block active"><img src="img/aerologo.jpg" alt="aero"></div>
+                    <div class="projects__block active"><img src="img/mtb.jpg" alt="modern times"></div>
+                    <div class="projects__block active"><img src="img/akmockup.jpg" alt="athletic kats"></div>
+                    <div class="projects__block active"><img src="img/va.jpg" alt="the visual architect"></div>
+                    <div class="projects__block active"><img src="img/Portfolio.jpg" alt="johnny vasquez jr"></div>
+                    <!-- <div class="projects__block active"><a href="#" target="_blank" rel="nofollow"><img src="img/project-6.jpg" alt=""></a></div> -->
                   </div>
                 </div>
-                <div class="content-right">
-                  <div class="content-subtitle">
-                    Services <span class="span">Offered</span>
+              </div>
+            </section>
+          </div>
+
+
+          <!-- 03-Services -->
+
+
+          <div class="scrollable">
+            <section class="awards">
+              <div class="sticky-title">
+                <ul>
+                  <li>
+                    <div>Services</div>
+                    <div>3.0</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content">
+                <div class="content__left">
+                  <div class="content__title">
+                    <div class="h1">Complexity</div>
+                    <div class="h1 span">Meets</div>
+                    <div class="h1">Minimalism</div>
                   </div>
-                  <div class="content-services services-list">
-                    <div class="content-service">
-                      <div class="content-services-img">
-                        <img src="images/multi-web.png" alt="web development" />
+                  <div class="content__description">
+                    <div class="small">From concept and UX to development and launch, everything is handled in-house.</div>
+                  </div>
+                  <!-- <div class="content__btn-block">
+                    <div class="content__btn-label small">View behance</div><a class="content__btn-btn btn btn--arrow" href="#">
+                      <svg>
+                        <use xlink:href="./svg/sprite.svg#arrow"></use>
+                      </svg></a>
+                  </div> -->
+                </div>
+                <div class="content__right">
+                  <div class="content__subtitle">What we <span>DO</span></div>
+                  <div class="content__awards awards__list">
+                    <div class="content__award">
+                      <div class="content__award-img"><img src="img/uxui.png" alt=""></div>
+                      <div class="content__award-title">
+                        <p>UI and UX Design</p>
                       </div>
-                      <div class="content-services-title">
-                        <p>Front end Web Development</p>
-                      </div>
-                      <div class="content-services-text small">
-                        Design and create aesthetically pleasing and
-                        user-friendly website that increases traffic and
-                        business.
-                      </div>
+                      <div class="content__award-text small">Focusing on designing experiences that are usable, beautiful, and delightful to users.</div>
                     </div>
-                    <div class="content-service">
-                      <div class="content-services-img">
-                        <img src="images/uxui.png" alt="ui ux" />
+                    <div class="content__award">
+                      <div class="content__award-img"><img src="img/logodesign.png" alt=""></div>
+                      <div class="content__award-title">
+                        <p>Graphic Design</p>
                       </div>
-                      <div class="content-services-title">
-                        <p>UI/UX Design</p>
-                      </div>
-                      <div class="content-services-text small">
-                        Focusing on designing experiences that are usable,
-                        beautiful, and delightful to users.
-                      </div>
+                      <div class="content__award-text small">Conceptualize and develop a design that fits your brand.</div>
                     </div>
-                    <div class="content-service">
-                      <div class="content-services-img">
-                        <img src="images/logodesign.png" alt="logo design" />
+                    <div class="content__award">
+                      <div class="content__award-img"><img src="img/multi-web.png" alt=""></div>
+                      <div class="content__award-title">
+                        <p>Front End Web Development</p>
                       </div>
-                      <div class="content-services-title">
-                        <p>Logo Design</p>
-                      </div>
-                      <div class="content-services-text small">
-                        Conceptualize and develop a design that fits your brand.
-                      </div>
+                      <div class="content__award-text small">Design and create aesthetically pleasing and user-friendly website that increases traffic and business.</div>
                     </div>
-                    <div class="content-service">
-                      <div class="content-services-img">
-                        <img src="images/content.png" alt="content" />
-                      </div>
-                      <div class="content-services-title">
+                    <div class="content__award">
+                      <div class="content__award-img"><img src="img/content.png" alt=""></div>
+                      <div class="content__award-title">
                         <p>Content Creation</p>
                       </div>
-                      <div class="content-services-text small">
-                        Create visual content for your website or marketing
-                        purposes.
-                      </div>
+                      <div class="content__award-text small">Create stunning visual content for your website and marketing purposes.</div>
                     </div>
                   </div>
                 </div>
               </div>
             </section>
+          </div>
 
-            <!-- Contact -->
 
-            <section id="contact">
-              <div class="content">
-                <div class="sticky-title">
-                  <ul>
-                    <li>
-                      <div class="light">Contact</div>
-                      <div>4.0</div>
-                    </li>
-                  </ul>
+
+          <!-- 04-Testimonials -->
+
+          <div class="scrollable">
+            <section class="testimonials">
+              <div class="sticky-title">
+                <ul>
+                  <li>
+                    <div>Testimonials</div>
+                    <div>4.0</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content" style="background-image: url(img/testmonials-bg.png); background-size: auto 100%; background-repeat: no-repeat; background-position: center center;">
+                <div class="content__left">
+                  <div class="content__title">
+                    <div class="h1">Happy</div>
+                    <div class="h1">Clients</div>
+                    <div class="content__description"></div>
+                    <div class="small">Clear communication, no surprises. We keep you informed at every stage of the process.</div>
+                  
+                  </div>
+                  <div class="testimonials__clients">
+                    <div class="testimonials__client"><img src="img/Aero.png" alt="aero"></div>
+                    <div class="testimonials__client"><img src="img/super73.png" alt="super73"></div>
+                    <div class="testimonials__client"><img src="img/mtLogo.png" alt="modern times"></div>
+                    <!-- <div class="testimonials__client"><img src="img/jv.png" alt=""></div> -->
+                 </div>
                 </div>
-                <div class="content-left">
-                  <div class="content-title">
+                <div class="content__right">
+                  <div class="content__subtitle"><span>Creative</span> custom brand focused solutions.</div>
+                  <div class="content__slider slides testimonials__slider">
+                    <div class="slides__container">
+                      <div class="slides__inner">
+                        <div class="slide">
+                          <div class="content__slider-text small">“Working with Johnny was an excellent experience. He was responsive, creative, and helped the team deliver a clean, modern website that exceeded our expectations."</div>
+                          <div class="content__slider-name">Scott</div>
+                          <div class="content__slider-staff small">Modern Times Brewery</div>
+                        </div>
+                        <div class="slide">
+                          <div class="content__slider-text small">“Communication was smooth throughout the process, and deadlines were always met. Highly recommended."</div>
+                          <div class="content__slider-name">Mannie</div>
+                          <div class="content__slider-staff small">Merchant Medic</div>
+                        </div>
+                        <div class="slide">
+                          <div class="content__slider-text small">“Amazing work! Johnny exceeded all expectations and delivered a stunning website that perfectly represents our brand. He was communicative, patient, and incredibly skilled. I highly recommend him to anyone looking for a high-quality, professional website."</div>
+                          <div class="content__slider-name">Christine</div>
+                          <div class="content__slider-staff small">Super73</div>
+                        </div>
+                        <div class="slide">
+                          <div class="content__slider-text small">“He was easy to work with, open to feedback, and clearly knowledgeable about both design and branding. The project was completed on time and on budget."</div>
+                          <div class="content__slider-name">Jake</div>
+                          <div class="content__slider-staff small">Aerospec</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slides__controls">
+                      <button class="slides__btn slides__btn--prev btn btn--invert btn--arrow" id="prevButton">
+                        <svg>
+                          <use xlink:href="./svg/sprite.svg#arrow"></use>
+                        </svg>
+                      </button>
+                      <button class="slides__btn slides__btn--next btn btn--arrow" id="nextButton">
+                        <svg>
+                          <use xlink:href="./svg/sprite.svg#arrow"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+
+
+          <!-- 05-Experience -->
+
+          <div class="scrollable">
+            <section class="experience">
+              <div class="sticky-title">
+                <ul>
+                  <li>
+                    <div>The Experience</div>
+                    <div>5.0</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content">
+                <div class="content__left">
+                  <div class="content__title">
+                    <div class="h1">Why Clients</div>
+                    <div class="h1">Choose <span class="span">Us</span></div>
+                  </div>
+                  <div class="content__description">
+                    <div class="small">We don’t just make websites look good — we design with strategy, usability, and conversion in mind.</div>
+                  </div>
+                  
+                </div>
+                <div class="content__right">
+                  <div class="content__awards experience__list">
+                    <div class="content__award">
+                      <div class="content__award-title"><span class="small accnt"></span>
+                        <p class="accnt">Stradegy led design</p>
+                      </div>
+                      <div class="content__award-text small">Every design decision is intentional. We align visuals, layout, and user flow with your business goals to ensure your website doesn’t just look good, it performs.</div>
+                    </div>
+                    <div class="content__award">
+                      <!-- <div class="content__award-img"><img src="img/soc-be.svg" alt=""></div> -->
+                      <div class="content__award-title"><span class="small accnt"></span>
+                        <p class="accnt">Fast & responsive development</p>
+                      </div>
+                      <div class="content__award-text small">Your website is built for speed and adaptability, delivering smooth performance across all devices, screen sizes, and modern browsers.</div>
+                    </div>
+                    <div class="content__award">
+                      <!-- <div class="content__award-img"><img src="img/soc-tw.svg" alt=""></div> -->
+                      <div class="content__award-title"><span class="small accnt"></span>
+                        <p class="accnt">Custom, brand-focused solutions</p>
+                      </div>
+                      <div class="content__award-text small">No templates, no shortcuts. Each website is uniquely crafted to reflect your brand identity and speak directly to your audience.</div>
+                    </div>
+                    <div class="content__award">
+                      <!-- <div class="content__award-img"><img src="img/soc-inst.svg" alt=""></div> -->
+                      <div class="content__award-title"><span class="small accnt"></span>
+                        <p class="accnt">SEO-friendly & accessible</p>
+                      </div>
+                      <div class="content__award-text small">We follow SEO and accessibility best practices so your site is easy to find, easy to navigate, and usable for everyone.</div>
+                    </div>
+                    <div class="content__award">
+                      <!-- <div class="content__award-img"><img src="img/soc-in.svg" alt=""></div> -->
+                      <div class="content__award-title"><span class="small accnt"></span>
+                        <p class="accnt">Transparent process & support</p>
+                      </div>
+                      <div class="content__award-text small">Clear timelines, honest communication, and ongoing support—so you always know what’s happening and what comes next.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+
+          <!-- 06-Blog -->
+
+
+          <div class="scrollable">
+            <section class="news">
+              <div class="sticky-title">
+                <ul>
+                  <li>
+                    <div class="light">Blog</div>
+                    <div>6.0</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content">
+                <div class="content__left">
+                  <div class="content__title">
+                    <div class="h1">latest</div>
+                    <div class="h1 span">news</div>
+                    <div class="small">Coming Soon</div>
+                  </div>
+                  <!-- <ul class="content__menu news__menu">
+                    <li class="active"><a href="javascript:;">How to design well?</a></li>
+                    <li><a href="javascript:;">Lemon Illustration design</a></li>
+                    <li><a href="javascript:;">Paul theme Branding</a></li>
+                    <li><a href="javascript:;">Best typography 2020</a></li>
+                    <li><a href="javascript:;">my name is pattison</a></li>
+                  </ul> -->
+                  <!-- <div class="content__btn-block">
+                    <div class="content__btn-label small">View all works</div><a class="content__btn-btn btn btn--arrow" href="blog.html" target="_blank">
+                      <svg>
+                        <use xlink:href="./svg/sprite.svg#arrow"></use>
+                      </svg></a>
+                  </div> -->
+                </div>
+                <div class="content__right">
+                  <div class="news__blocks">
+
+                    <!-- <div class="news__block active">
+                      <div class="news__block-info">
+                        <div class="news__block-date small">3th January, 2020</div>
+                        <div class="news__block-text small">Berling ® —  minimalism photography agency website. with the help of a  minimalistic design, the site turned out to be very  user-friendly  and responsive, and the brand became more.</div>
+                        <div class="news__block-number">(01)</div>
+                      </div>
+                      <div class="news__block-image"><a href="blog.html" target="_blank"><img src="img/news-1.jpg" alt=""></a></div>
+                    </div> -->
+
+                    <!-- <div class="news__block active">
+                      <div class="news__block-info">
+                        <div class="news__block-date small">3th January, 2020</div>
+                        <div class="news__block-text small">Berling ® —  minimalism photography agency website. with the help of a  minimalistic design, the site turned out to be very  user-friendly  and responsive, and the brand became more.</div>
+                        <div class="news__block-number">(02)</div>
+                      </div>
+                      <div class="news__block-image"><a href="blog.html" target="_blank"><img src="img/news-2.jpg" alt=""></a></div>
+                    </div> -->
+
+                    <!-- <div class="news__block active">
+                      <div class="news__block-info">
+                        <div class="news__block-date small">3th January, 2020</div>
+                        <div class="news__block-text small">Berling ® —  minimalism photography agency website. with the help of a  minimalistic design, the site turned out to be very  user-friendly  and responsive, and the brand became more.</div>
+                        <div class="news__block-number">(03)</div>
+                      </div>
+                      <div class="news__block-image"><a href="blog.html" target="_blank"><img src="img/news-3.jpg" alt=""></a></div>
+                    </div> -->
+
+                    <!-- <div class="news__block active">
+                      <div class="news__block-info">
+                        <div class="news__block-date small">3th January, 2020</div>
+                        <div class="news__block-text small">Berling ® —  minimalism photography agency website. with the help of a  minimalistic design, the site turned out to be very  user-friendly  and responsive, and the brand became more.</div>
+                        <div class="news__block-number">(04)</div>
+                      </div>
+                      <div class="news__block-image"><a href="blog.html" target="_blank"><img src="img/news-4.jpg" alt=""></a></div>
+                    </div> -->
+
+                    <!-- <div class="news__block active">
+                      <div class="news__block-info">
+                        <div class="news__block-date small">3th January, 2020</div>
+                        <div class="news__block-text small">Berling ® —  minimalism photography agency website. with the help of a  minimalistic design, the site turned out to be very  user-friendly  and responsive, and the brand became more.</div>
+                        <div class="news__block-number">(05)</div>
+                      </div>
+                      <div class="news__block-image"><a href="blog.html" target="_blank"><img src="img/news-5.jpg" alt=""></a></div>
+                    </div> -->
+
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+
+
+
+          <!-- 07-Contact -->
+
+          <div class="scrollable" id="hireme">
+            <section class="contacts">
+              <div class="sticky-title">
+                <ul>
+                  <li>
+                    <div>contact</div>
+                    <div>7.0</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content">
+                <div class="content__left">
+                  <div class="content__title">
                     <div class="h1">LET'S WORK</div>
                     <div class="h1 span">TOGETHER</div>
                   </div>
-                  <div class="contact-copyright small">
-                    © 2024 The Digital Architect. <span class="span">All Rights Reserved</span>
-                  </div>
+                  <ul class="content__menu contacts__menu">
+                    <li class="active"><a class="noicon" href="javascript:;" onclick="window.open('mailto:johnny@thedigitalarchitect.io')">mail: johnny@thedigitalarchitect.io</a></li>
+                    <!-- <li class="active"><a class="noicon" href="https://t.me/thedigitalarchitectio" target="_blank">whatsapp: robert</a></li> -->
+                    <li class="active"><a class="noicon" href="https://t.me/thedigitalarchitectio" target="_blank">telegram: The Digital Architect</a></li>
+                  </ul>
+                  <div class="contacts__copyright small">© 2026 The Digital Architect. <span class="span">All Rights Reserved</span></div>
                 </div>
-                <div class="content-right">
-                  <div class="content-subtitle">
-                    Let's <span class="span">grab a coffee</span> or jump on a
-                    video chat.
-                  </div>
-                  <form
-                    class="content-contact contact-form"
-                    action="https://api.form-data.com/f/gs1mrtn91t82368kqecc7o"
-      method="post">
-                    <div class="content-brief">
-                      <div class="content-brief-title"></div>
-                      <div class="content-brief-text small">
-                        Explain <span class="span">your project</span> in detail
-                        and what goals you would like to acheive with your
-                        business.
+                <div class="content__right">
+                  <div class="content__subtitle">Let's <span>grab a coffee</span> or jump on a video chat.</div>
+                  <form class="content__contacts contacts__form js-contact-form" action="https://formsubmit.co/johnny@thedigitalarchitect.io" method="POST">
+                    <div class="content__brief">
+                      <div class="content__brief-title">
+                        <label class="input-file">
+                          <input type="file" name="file" id="brief"><span>send a brief</span>
+                        </label>
                       </div>
+                      <div class="content__brief-text small">Explain your project in detail and what goals you would like to acheive with your business.</div>
                     </div>
-                    <div class="content-form">
-                      <label class="content-form-input">
-                        <!-- <input
-                          type="hidden"
-                          name="_next"
-                          value="https://thedigitalarchitect.io/thankyou" /> -->
-                        <input
-                          type="text"
-                          id="name"
-                          name="name"
-                          required="" /><span
-                          class="content-form-placeholder span"
-                          >Name *</span
-                        >
+                    <div class="content__form">
+                      <label class="content__form-input">
+                        <input type="text" name="name"><span class="content__form-placeholder">name</span>
                       </label>
-                      <label class="content-form-input">
-                        <input
-                          type="email"
-                          id="email"
-                          name="email"
-                          required="" /><span
-                          class="content-form-placeholder span"
-                          >Email *</span
-                        >
+                      <label class="content__form-input">
+                        <input type="email" name="emal" required=""><span class="content__form-placeholder">EMAIL *</span>
                       </label>
-                      <label class="content-form-input">
-                        <input
-                          type="text"
-                          id="message"
-                          name="message"
-                          required=""
-                          minlength="10" /><span
-                          class="content-form-placeholder span"
-                          >Message *</span
-                        >
+                      <label class="content__form-input">
+                        <input type="text" name="msg" required="" minlength="10"><span class="content__form-placeholder">MESSAGE *</span>
                       </label>
-                      <div class="content-form-btn">
+                      <div class="content__form-btn">
                         <button class="btn btn--arrow" type="submit">
-                          SUBMIT
+                          <svg>
+                            <use xlink:href="./svg/sprite.svg#arrow"></use>
+                          </svg>
                         </button>
                       </div>
                     </div>
                   </form>
                 </div>
               </div>
-              <div class="footer">
-                <ul class="social-bottom">
-                  <a
-              href="https://www.instagram.com/johnnyvasquezjr/"
-              rel="noopener"
-              target="_blank"
-              ><ion-icon name="logo-instagram"></ion-icon></a>
-            
-            <a
-              href="https://github.com/johnnyvasquezjr"
-              rel="noopener"
-              target="_blank"
-              ><ion-icon name="logo-github"></ion-icon></a>
-            <a
-              href="https://www.linkedin.com/in/johnnyvasquezjr/"
-              rel="noopener"
-              target="_blank"
-              ><ion-icon name="logo-linkedin"></ion-icon></a>
-                </ul>
-                <div class="copyright-bottom">
-                  © 2024 The Digital Architect. <span class="span"> All Rights Reserved</span>
-                </div>
-              </div>
             </section>
-
           </div>
         </div>
       </div>
@@ -454,6 +574,7 @@
 
     <div class="inner-cursor"></div>
     <div class="outer-cursor"></div>
-    <script src="app.js"></script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
